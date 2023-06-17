@@ -4,14 +4,14 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码或向开发者阿木龙索要 ChatGPT 使用权限。",
   },
   Auth: {
     Title: "需要密码",
-    Tips: "管理员开启了密码验证，请在下方填入访问码",
-    Input: "在此处填写访问码",
+    Tips: "开发者阿木龙开启了密码验证，在下方填入访问密码后即可使用 ChatGPT",
+    Input: "请输入访问密码",
     Confirm: "确认",
-    Later: "稍后再说",
+    Later: "暂不填写",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -200,7 +200,7 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: "你好！我是 ChatGPT 。有什么我可以帮助你的吗？",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
